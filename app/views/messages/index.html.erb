@@ -1,1 +1,7 @@
 <h1>This is the index view.</h1>
+
+<% @messages.each do |message| %>
+  <h2><%=message.title%></h2>
+<%end%>
+
+<%= link_to "New Message" %>
